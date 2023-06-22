@@ -55,17 +55,17 @@ body {
   color: #ffffff;
 }
 
-.msf-navigation li.nav-item > a.nav-link {
+.msf-navigation li.nav-item>a.nav-link {
   padding: 0;
   margin: 0 30px 0 0;
   color: #ffffff;
 }
 
-.msf-navigation li.nav-item > a.nav-link:hover {
+.msf-navigation li.nav-item>a.nav-link:hover {
   color: var(--color-eight);
 }
 
-.msf-navigation li.nav-item:last-child > a.nav-link {
+.msf-navigation li.nav-item:last-child>a.nav-link {
   margin-right: 0;
 }
 
@@ -103,13 +103,13 @@ body {
   height: 100%;
 }
 
-.msf-hero-section > .container {
+.msf-hero-section>.container {
   position: relative;
   min-height: 100vh;
   z-index: 1;
 }
 
-.msf-hero-section > .container > .row {
+.msf-hero-section>.container>.row {
   position: absolute;
   top: 50%;
   left: 0;
@@ -163,24 +163,31 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
   }
+
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -218,6 +225,7 @@ body {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -238,21 +246,18 @@ body {
   margin: 0;
   border-radius: 50%;
   position: relative;
-  background: radial-gradient(
-    circle at 50% 120%,
-    #323232,
-    #0a0a0a 80%,
-    #000000 100%
-  );
+  background: radial-gradient(circle at 50% 120%,
+      #323232,
+      #0a0a0a 80%,
+      #000000 100%);
 }
+
 .ball:before {
   content: "";
   position: absolute;
-  background: radial-gradient(
-    circle at 50% 120%,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0) 70%
-  );
+  background: radial-gradient(circle at 50% 120%,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0) 70%);
   border-radius: 50%;
   bottom: 2.5%;
   left: 5%;
@@ -262,6 +267,7 @@ body {
   -webkit-filter: blur(5px);
   z-index: 2;
 }
+
 .ball:after {
   width: 100%;
   height: 100%;
@@ -270,12 +276,10 @@ body {
   top: 5%;
   left: 10%;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.8) 14%,
-    rgba(255, 255, 255, 0) 24%
-  );
+  background: radial-gradient(circle at 50% 50%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8) 14%,
+      rgba(255, 255, 255, 0) 24%);
   -webkit-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
   -moz-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
   -ms-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
@@ -288,12 +292,10 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.1) 40%,
-    rgba(0, 0, 0, 0) 50%
-  );
+  background: radial-gradient(circle at 50% 50%,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0) 50%);
   -webkit-transform: rotateX(90deg) translateZ(-150px);
   -moz-transform: rotateX(90deg) translateZ(-150px);
   -ms-transform: rotateX(90deg) translateZ(-150px);
@@ -301,6 +303,7 @@ body {
   transform: rotateX(90deg) translateZ(-150px);
   z-index: -1;
 }
+
 .msf-skills .skills {
   width: 300px;
   height: 300px;
@@ -316,4 +319,11 @@ body {
   -ms-perspective-origin: 50% 50%;
   -o-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%;
+}
+
+span.skill-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
